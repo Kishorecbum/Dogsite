@@ -1,0 +1,217 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown Menu</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background: white;
+            padding: 15px 0;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav ul li {
+            position: relative;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: black;
+            font-size: 18px;
+            padding: 10px;
+            display: block;
+        }
+
+        /* Dropdown Styling */
+        .dropdown {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background: white;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            min-width: 150px;
+        }
+
+        .dropdown li {
+            display: block;
+        }
+
+        .dropdown li a {
+            padding: 10px;
+            width: 100%;
+            display: block;
+        }
+
+        .dropdown li a:hover {
+            background: #ddd;
+        }
+
+        /* Show Dropdown on Hover */
+        nav ul li:hover .dropdown {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li>
+                <a href="#">BREEDS</a>
+                <ul class="dropdown">
+                    <li><a href="#">Origin</a></li>
+                    <li><a href="#">Function</a></li>
+                    <li><a href="#">History</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">UPKEEP</a>
+                <ul class="dropdown">
+                    <li><a href="#">Feeding</a></li>
+                    <li><a href="#">Grooming</a></li>
+                    <li><a href="#">Exercise</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">CONNECT</a>
+                <ul class="dropdown">
+                    <li><a href="#">Forums</a></li>
+                    <li><a href="#">Adoption</a></li>
+                    <li><a href="#">Events</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown Menu</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background: white;
+            padding: 15px 0;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav ul li {
+            position: relative;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: black;
+            font-size: 18px;
+            padding: 10px;
+            display: block;
+        }
+
+        /* Dropdown Styling */
+        .dropdown {
+            display: none;
+            position: absolute;
+            top: 100%; /* Ensure it appears below the hovered item */
+            left: 0;
+            background: white;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            min-width: 150px;
+        }
+
+        .dropdown li {
+            display: block;
+        }
+
+        .dropdown li a {
+            padding: 10px;
+            width: 100%;
+            display: block;
+        }
+
+        .dropdown li a:hover {
+            background: #ddd;
+        }
+
+        /* Show Dropdown on Hover (only for the specific li) */
+        nav ul li:hover > .dropdown {
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li>
+                <a href="#">BREEDS</a>
+                <ul class="dropdown">
+                    <li><a href="#">Origin</a></li>
+                    <li><a href="#">Function</a></li>
+                    <li><a href="#">History</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">UPKEEP</a>
+                <ul class="dropdown">
+                    <li><a href="#">Feeding</a></li>
+                    <li><a href="#">Grooming</a></li>
+                    <li><a href="#">Exercise</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">CONNECT</a>
+                <ul class="dropdown">
+                    <li><a href="#">Forums</a></li>
+                    <li><a href="#">Adoption</a></li>
+                    <li><a href="#">Events</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+</body>
+</html>
